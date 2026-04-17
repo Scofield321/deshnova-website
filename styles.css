@@ -1,0 +1,210 @@
+/* ===================== styles.css ===================== */
+
+:root {
+  --primary: #2563eb;
+  --dark: #020617;
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 30px;
+}
+
+.nav-actions a {
+  margin-left: 15px;
+  font-size: 0.9rem;
+}
+
+.logo span {
+  color: black;
+  font-size: 15px;
+}
+
+.btn-outline {
+  border: 1px solid var(--primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-actions {
+  margin-top: 20px;
+}
+
+.btn-primary,
+.btn-light {
+  display: inline-block;
+  padding: 12px 18px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: white;
+  color: #2563eb;
+}
+.btn-light {
+  border: 1px solid white;
+}
+
+.core {
+  padding: 30px 20px;
+}
+
+.core-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.core-points {
+  margin-top: 15px;
+  display: grid;
+  gap: 8px;
+}
+
+.modules {
+  padding: 30px 20px;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.module-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.module-card:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.steps {
+  padding: 30px 20px;
+}
+
+.steps-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.step span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.cta {
+  background: #020617;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+}
+
+.contact-inline {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+/* WhatsApp slight highlight */
+.whatsapp {
+  color: #25d366;
+}
+
+@media (min-width: 768px) {
+  .module-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
