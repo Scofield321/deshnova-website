@@ -84,6 +84,68 @@ body {
   border: 1px solid white;
 }
 
+/* ABOUT */
+
+.about {
+  padding: 40px 20px;
+}
+
+.about-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-card h2 {
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.about-intro {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  color: #334155;
+}
+
+/* GRID */
+.about-grid {
+  display: grid;
+  gap: 15px;
+}
+
+/* ITEMS */
+.about-item {
+  padding: 18px;
+  border-radius: 12px;
+  background: #f8fafc;
+  transition: all 0.25s ease;
+}
+
+.about-item h3 {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.about-item p {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+/* HOVER EFFECT */
+.about-item:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-4px);
+}
+
+.about-item:hover p,
+.about-item:hover h3 {
+  color: white;
+}
+
+/* CORE */
 .core {
   padding: 30px 20px;
 }
@@ -154,6 +216,8 @@ body {
   margin-bottom: 10px;
 }
 
+/* CTA */
+
 .cta {
   background: #020617;
   color: white;
@@ -199,6 +263,23 @@ footer {
 .whatsapp {
   color: #25d366;
 }
+
+.icon i {
+  font-size: 1.2rem;
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+/* TABLET+ */
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* desktop */
 
 @media (min-width: 768px) {
   .module-grid {
