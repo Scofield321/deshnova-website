@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.deshnova.com"
+        }
+      ],
+      "destination": "https://deshnova.com/$1",
+      "permanent": true
+    }
+  ]
+}
