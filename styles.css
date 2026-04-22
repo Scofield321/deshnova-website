@@ -474,6 +474,97 @@ body {
   width: 100%;
 }
 
+/* EXPERIENCE SECTION */
+.experience {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+}
+
+.experience-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.experience h2 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.experience-sub {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.experience-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* CARD */
+.experience-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: left;
+
+  border: 1px solid rgba(226, 232, 240, 0.6);
+
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+.exp-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: white;
+  font-size: 18px;
+
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.experience-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.experience-card p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* HOVER (ELITE FEEL) */
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+.experience::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #2563eb20;
+  filter: blur(100px);
+  top: -50px;
+  left: -50px;
+}
+
+/* CTA */
+
 .cta {
   padding: 80px 20px;
   background: linear-gradient(135deg, #0f172a, #1e293b);
@@ -817,5 +908,27 @@ body {
     font-size: 0.9rem;
     color: #2563eb;
     opacity: 0.7;
+  }
+  .experience h2 {
+    font-size: 2.2rem;
+  }
+
+  .experience-sub {
+    font-size: 1rem;
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .experience-card {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
